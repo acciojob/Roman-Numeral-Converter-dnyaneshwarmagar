@@ -14,9 +14,9 @@ function convertToRoman(num) {
     let result = '';
 
     for (let key in obj) {
-        while (num >= key[1]) {
-            result += key[0];
-            num -= key[1];
+        while (num >= obj[1][1]) {
+            result += obj[key][0];
+            num -= obj[key][1];
         }
     }
 
